@@ -1,38 +1,150 @@
-.App {
-  text-align: center;
+/* navbar */
+html {
+  scroll-behavior: smooth;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+  height: 40px;
+  padding: 10px;
 }
+.notham {
+  height: auto;
+}
+.me {
+  width: auto;
+  margin: 2px;
+  z-index: 199;
+  transform: translateX(70px);
+  background-color: black;
+}
+.overr {
+  width: 100vw;
+  height: auto;
+  z-index: 199;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  margin-left: 0px;
+  transform: translateX(-70px);
+  background-color: transparent;
+}
+.over {
+  transform: translateX(-70px);
+}
+/* section1 */
+.section1 {
+  background: url('https://images.unsplash.com/photo-1538370965046-79c0d6907d47?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8fA%3D%3D&w=1000&q=80')
+    no-repeat;
+  background-position: cover;
+  /* background-size: 100% auto; */
+  background-size: cover;
+
+  height: auto;
+  width: 100%;
+}
+/* description */
+.tech-1 {
+  background-color: #ffc7ea;
+  border: 5px solid #a9907e;
+}
+.tech-2 {
+  background-color: #f3fde8;
+  border: 5px solid #a9907e;
+}
+.tech-3 {
+  background-color: #b9b4c7;
+  border: 5px solid #a9907e;
+}
+.tech-4 {
+  background-color: #ffd9b7;
+  border: 5px solid #a9907e;
+}
+.tech-5 {
+  background-color: #a084e8;
+  border: 5px solid #a9907e;
+}
+.tech-6 {
+  background-color: aliceblue;
+  border: 5px solid #a9907e;
+}
+.section1-2 h2 {
+  font-size: 1.6rem;
+  color: #6c3428;
+  font-weight: 300;
+}
+.tit1 {
+  text-shadow: 2px 2px 4px black;
+}
+.sech {
+  text-shadow: 2px 4px 4px #a084e8;
+}
+.sech:hover {
+  text-shadow: 6px 7px 7px #ffb4b4;
+}
+@media (max-width: 700px) {
+  .section1-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Home */
+.home {
+  filter: drop-shadow(10px 10px 10px black);
+}
+.slide {
+  overflow-x: hidden;
+}
+/* Contact Page */
+.Contacts {
+  background: url('https://img.freepik.com/premium-vector/geometric-background-with-abstract-shapes_535749-941.jpg')
+    no-repeat center;
+  background-size: cover;
+  background-position: cover;
+  height: auto;
+  width: 100vw;
+}
+@media (max-width: 1000px) {
+  .Contacts {
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+  }
+
+  .p-24 {
+    padding: 0 !important;
+    margin: 0;
+  }
+  textarea {
+    height: 4rem;
+    width: 15rem;
+  }
 }
 
-.App-link {
-  color: #61dafb;
+@media (min-width: 1000px) and(max-width:1300px) {
+  .Contacts {
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    padding: 20rem;
+    margin: 0;
+  }
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 400px) {
+  .Contacts {
+    background-size: contain;
   }
-  to {
-    transform: rotate(360deg);
+  textarea {
+    height: 4rem;
+    width: 6rem;
   }
+}
+@media (max-width: 900px) and (min-width: 700px) {
+  .tot {
+    margin-top: 10rem;
+  }
+}
+.butto:hover {
+  background-color: white;
+  color: black;
 }
